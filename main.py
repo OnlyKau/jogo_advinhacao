@@ -23,6 +23,10 @@ if (secret_number == guess):
 else:
 
         print("Wrong Number")
+
+  #first contact
+
+print ("I want a job")
   
 
 
