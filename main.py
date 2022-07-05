@@ -10,23 +10,35 @@ guess = -1
 
 while guess <0 :
 
-        try:
-                guess = int(input("Enter your number: "))
-                print ("You have choose", guess, sep = ' ')
-                break
-        except:
-                print("Invalid value, please just numbers!")
-                continue
+  try:
+    guess = int(input("Enter your number: "))
+    print ("You have choose", guess, sep = ' ')
+    break
+  except:
+    print("Invalid value, please just numbers!")
+    continue
+
+right =  secret_number == guess  
+
+high  = guess > secret_number
+
+low   = guess < secret_number
                 
-if (secret_number == guess):
-        print ("Right Number")
+if (right):
+
+  print ("Right Number")
+
 else:
+        
+  if(high):
+    print("Wrong Number, You chosse a higher number than secret number.")
+        
+  if(low):
+    print("Wrong Number, you choose a lower number than secret number.")
 
-        print("Wrong Number")
 
-  #first contact
-
-print ("I want a job")
+print("End Game")          
+ 
   
 
 
